@@ -33,6 +33,12 @@ document.getElementById("form-tasks").addEventListener("submit", (event) => {
     refreshTasks();
 });
 
+document.getElementById('description').addEventListener('keypress', (e) => {
+    console.log(e)
+    e.key == "\n" && document.getElementById('add-task').click();
+    
+})
+
 
 
 qs('.task-list').addEventListener('click', (event) => {

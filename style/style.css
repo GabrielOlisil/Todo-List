@@ -126,6 +126,7 @@ li span {
 }
 .task-description{
     margin-top: 1em;
+    padding: .2em;
 }
 
 .actions {
@@ -174,4 +175,11 @@ li span {
 
 .rotated {
     transform: rotate(180deg);
+}
+
+@media (max-width: 450px){
+    main{
+        padding: 2em;
+        gap: 2em
+    }
 }
