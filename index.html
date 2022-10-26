@@ -1,65 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<html lang="pt-br">
 
-    <style>
-      html {
-        font-size: 0.625em;
-      }
-      * {
-        border: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      .fa-solid {
-        color: rosybrown;
-      }
-      body {
-        background-color: #3a506b;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style/style.css">
+</head>
 
-      main {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 100vh;
-      }
+<body class="dark">
 
-      .panel {
-        background-color: #0b132b;
-        min-height: 3em;
-        padding: 2em;
-      }
+  <div class="models">
+    <div class="tasks">
+      <ul>
+        <li>
+          <div class="item">
+            <div class="task">
+              <i class="fa-solid fa-square"></i>
+              Task1
+              <div class="actions">
 
-      input[type="text"] {
-        background-color: #F45B69;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <div class="panel">
-        <form action="">
-          <div>
-            <label for="name-task">Tarefa</label>
-            <input type="text" id="name-task" />
+                <i class="fa-solid fa-pen-to-square"></i>
+                <i class="fa-solid fa-trash"></i>
+              </div>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="task-description closed">
+              Levar o predrin na escola
+            </div>
+
           </div>
-          <textarea name="" id="" rows="10"></textarea>
-        </form>
+
+          <span>feito</span>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <main>
+    <div class="panel">
+      <form action="">
+        <div>
+          <label for="name-task">Tarefa</label>
+          <input type="text" id="name-task" />
+        </div>
+        <div>
+          <label for="description">Descrição</label>
+          <textarea name="" id="description" rows="10"></textarea>
+        </div>
+        <input type="submit" name="" id="add-task">
+      </form>
+    </div>
+
+    <div class="task-area">
+      <h2>Tarefas</h2>
+
+      <div class="tasks">
+        <ul>
+          <li>
+            <div class="item">
+              <div class="task">
+                <i class="fa-solid fa-square-check"></i>
+                Task1
+                <div class="actions">
+
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+                <i class="fa-solid fa-chevron-down fa-flip-vertical"></i>
+              </div>
+
+              <div class="task-description closed">
+                Levar o predrin na escola
+              </div>
+
+            </div>
+
+            <span>feito</span>
+          </li>
+
+        </ul>
       </div>
 
-      <div class="task-area">adhs</div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>
