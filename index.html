@@ -15,36 +15,40 @@
 <body class="dark">
 
   <div class="models">
-    <div class="tasks">
-      <ul>
-        <li>
-          <div class="item">
-            <div class="task">
-              <i class="fa-solid fa-square"></i>
-              Task1
-              <div class="actions">
 
-                <i class="fa-solid fa-pen-to-square"></i>
-                <i class="fa-solid fa-trash"></i>
-              </div>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
+    <li>
+      <div class="item">
+        <div class="task">
+          <i class="fa-solid fa-square" action="check"></i>
+          <div class="task-name">Aaaada</div>
+          <div class="actions">
 
-            <div class="task-description closed">
-              Levar o predrin na escola
-            </div>
-
+            <i class="fa-solid fa-pen-to-square" action="edit"></i>
+            <i class="fa-solid fa-trash" action="exclude"></i>
+            <i class="fa-solid fa-chevron-down" action="toggleShow"></i>
           </div>
 
-          <span>feito</span>
-        </li>
+          <div class="edit-box closed">
+            <input type="text" class="edit-task">
+            <textarea class="edit-desc-task" rows="10"></textarea>
+            <button action="save">Editar</button>
+            <button action="cancel">Cancelar</button>
+          </div>
+        </div>
 
-      </ul>
-    </div>
+        <span class="task-description closed">
+          Levar o predrin na escola
+        </span>
+
+      </div>
+
+    </li>
+
+
   </div>
   <main>
     <div class="panel">
-      <form action="">
+      <form action="" id="form-tasks">
         <div>
           <label for="name-task">Tarefa</label>
           <input type="text" id="name-task" />
@@ -61,34 +65,16 @@
       <h2>Tarefas</h2>
 
       <div class="tasks">
-        <ul>
-          <li>
-            <div class="item">
-              <div class="task">
-                <i class="fa-solid fa-square-check"></i>
-                Task1
-                <div class="actions">
-
-                  <i class="fa-solid fa-pen-to-square"></i>
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-                <i class="fa-solid fa-chevron-down fa-flip-vertical"></i>
-              </div>
-
-              <div class="task-description closed">
-                Levar o predrin na escola
-              </div>
-
-            </div>
-
-            <span>feito</span>
-          </li>
+        <ul class="task-list">
+          
 
         </ul>
       </div>
 
     </div>
   </main>
+
+  <script src="scripts/app.js" type="module"></script>
 </body>
 
 </html>
