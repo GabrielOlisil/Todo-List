@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Todo - List</title>
+  <link rel="shortcut icon" href="icon/boockmarc.ico.svg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,7 +21,7 @@
       <div class="item">
         <div class="task">
           <i class="fa-solid fa-square" action="check"></i>
-          <div class="task-name">Aaaada</div>
+          <div class="task-name">-- Place here the title of the task</div>
           <div class="actions">
 
             <i class="fa-solid fa-pen-to-square" action="edit"></i>
@@ -37,7 +38,7 @@
         </div>
 
         <div class="task-description closed">
-          Levar o predrin na escola
+          -- Place here the description of the task
         </div>
 
       </div>
@@ -54,11 +55,11 @@
       <form action="" id="form-tasks">
         <div>
           <label for="name-task">Tarefa</label>
-          <input type="text" id="name-task" />
+          <input type="text" id="name-task" placeholder="Regar as plantas"/>
         </div>
         <div>
           <label for="description">Descrição</label>
-          <textarea name="" id="description" rows="10"></textarea>
+          <textarea name="" id="description" rows="10" placeholder="Lembrar de não molhar os cactos"></textarea>
         </div>
         <input type="submit" name="" id="add-task">
       </form>
