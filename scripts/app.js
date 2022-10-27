@@ -33,6 +33,14 @@ document.getElementById("form-tasks").addEventListener("submit", (event) => {
     refreshTasks();
 });
 
+qs('.change-theme').addEventListener("click", () =>{
+    qs('.change-theme').classList.toggle('fa-moon')
+    qs('.change-theme').classList.toggle('fa-sun')
+
+    document.body.classList.toggle('light')
+    document.body.classList.toggle('dark')
+})
+
 document.getElementById('description').addEventListener('keypress', (e) => {
     console.log(e)
     e.key == "\n" && document.getElementById('add-task').click();
